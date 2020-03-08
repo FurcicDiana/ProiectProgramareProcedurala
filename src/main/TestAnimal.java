@@ -1,23 +1,25 @@
 package main;
 
 public class TestAnimal {
+	
 	public static void main(String[] args)
 	{
-		Animal animal1=new Animal();
+		Animal cat = new Animal();
+		cat.setAnimal("pisica");
+		cat.setCuloare("neagra");
+		cat.setVarsta(1);
 		
-		animal1.setAnimal("pisica");
-		animal1.setCuloare("neagra");
-		animal1.setVarsta(1);
+		cat.afiseazaInformatii();
 		
-	Animal animal2=new Animal("gri");
-	animal2.setAnimal("cal");
-	animal2.setVarsta(4);
+	Pisica miau = new Pisica("Pisica","gri",2);
+	miau.afiseazaInformatii();
+	miau.afiseazaInformatii();
 	
-	Animal animal3=new Animal(" papagal", "rosu" ,(3));
 	
-	System.out.println("Animalul este o "+ animal1.getAnimal()+" de culoare "+animal1.getCuloare()+" si are varsta de "+animal1.getVarsta()+ " an");
-	System.out.println("Animalul este un " + animal2.getAnimal()+" de culoare "+animal2.getCuloare()+" si are varsta de "+animal2.getVarsta() + " ani");;
-	System.out.println("Animalul este un " + animal3.getAnimal()+" de culoare "+animal3.getCuloare()+" si are varsta de "+animal3.getVarsta()+ " ani");;
+	
+	Caine dog = new Caine("Caine","Negru",3);
+	dog.afiseazaInformatii();
+	dog.afiseazaInformatii();
 	}
 }
 
